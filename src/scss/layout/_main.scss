@@ -1,0 +1,153 @@
+.main {
+  opacity: 0.95;
+  background-image: url(../images/popp.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  &-form {
+    display: flex;
+
+    &__list {
+      width: 80%;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0 20px 0;
+  }
+  &__container {
+    border: 2px black solid;
+    padding: 8px;
+    margin: 5px;
+    width: 230px;
+    list-style: none;
+    border-radius: 8px;
+    background-color: black;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+    &--fav {
+      border: 2px black solid;
+      border-radius: 8px;
+      padding: 5px;
+      margin: 10px;
+      width: 100px;
+      list-style: none;
+
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+  &__img {
+    height: 250px;
+  }
+  &__img--fav {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__name {
+    font-family: $font-title;
+    font-size: 15px;
+    color: white;
+  }
+
+  &__aside {
+    border: 2px dotted black;
+    border-radius: 15px;
+    width: 20%;
+    margin: 10px;
+    padding: 5px 0 0 5px;
+    margin-right: 32px;
+
+    &--fav {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px;
+    }
+    &--start {
+      padding: 5px;
+    }
+    &--title {
+      font-family: $font-title;
+      padding: 2px;
+    }
+  }
+  &__hiddenFav {
+    display: none;
+  }
+  &__aside-box {
+    display: flex;
+  }
+  &__name--fav {
+    font-size: 13px;
+  }
+  &__imgStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__details {
+    height: 190px;
+  }
+  &__popcorn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 130px 100px;
+    min-height: 100vh;
+
+    &--title {
+      font-family: $font-title;
+      font-size: 20px;
+    }
+    &--slogan,
+    &--sloganTitle {
+      font-family: $font-title;
+      font-size: 80px;
+    }
+    &--sloganTitle {
+      text-transform: uppercase;
+    }
+
+    &--btn {
+      margin: 8px 15px;
+      padding: 8px;
+      font-size: 15px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+}
+.color-favorite {
+  background: #e7ff1c;
+  background: -moz-radial-gradient(center, #e7ff1c 0%, #a4870b 50%, #e7ff1c 100%);
+  background: -webkit-radial-gradient(center, #e7ff1c 0%, #a4870b 50%, #e7ff1c 100%);
+  background: radial-gradient(ellipse at center, #e7ff1c 0%, #a4870b 50%, #e7ff1c 100%);
+}
+.reset {
+  margin: 5px;
+  height: 24px;
+  padding: 2px;
+  font-family: $font-title;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
